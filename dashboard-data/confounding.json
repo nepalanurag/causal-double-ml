@@ -1,0 +1,54 @@
+{
+  "note": "Group means by 401(k) eligibility: the selection mechanism. Eligible workers differ on every confounder.",
+  "income_eligibility_correlation": 0.294,
+  "groups": [
+    {
+      "variable": "Income ($)",
+      "not_eligible": 46439,
+      "eligible": 79209,
+      "difference": 32770
+    },
+    {
+      "variable": "Age",
+      "not_eligible": 43,
+      "eligible": 45,
+      "difference": 3
+    },
+    {
+      "variable": "Education (yrs)",
+      "not_eligible": 14,
+      "eligible": 14,
+      "difference": 0
+    },
+    {
+      "variable": "Family size",
+      "not_eligible": 3,
+      "eligible": 3,
+      "difference": 0
+    },
+    {
+      "variable": "Married",
+      "not_eligible": 1,
+      "eligible": 1,
+      "difference": 0
+    },
+    {
+      "variable": "Has IRA",
+      "not_eligible": 0,
+      "eligible": 0,
+      "difference": 0
+    },
+    {
+      "variable": "Owns home",
+      "not_eligible": 1,
+      "eligible": 1,
+      "difference": 0
+    },
+    {
+      "variable": "Net financial assets ($)",
+      "not_eligible": 70466,
+      "eligible": 133550,
+      "difference": 63085
+    }
+  ]
+}
