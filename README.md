@@ -1,5 +1,9 @@
 # Double Machine Learning for a Causal Effect: Does 401(k) Eligibility Raise Wealth?
 
+## Interactive dashboard
+
+Results are easiest to explore in the interactive dashboard: https://anurag-nepal-portfolio.vercel.app/ai-lab/causal-double-ml/
+
 ## Problem
 
 Does being eligible for a 401(k) retirement plan increase a household's net financial assets? This is the classic example from Wooldridge's econometrics textbook, and it is hard for one reason: **confounding**. Workers offered a 401(k) tend to be richer, older, and more educated than workers who are not. A raw comparison of average wealth mixes up the effect of the 401(k) with the effect of being the kind of person who gets offered one.
