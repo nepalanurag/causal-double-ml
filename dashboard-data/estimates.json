@@ -1,0 +1,41 @@
+{
+  "note": "Four estimators of the causal effect of 401(k) eligibility on net financial assets. Simulated data with known truth.",
+  "truth": 8000,
+  "n": 8000,
+  "eligibility_rate": 0.769,
+  "seed": 20261002,
+  "methods": [
+    {
+      "method": "Naive OLS",
+      "estimate": 63085,
+      "ci_low": 59621,
+      "ci_high": 66549,
+      "bias": 55085,
+      "covers_truth": false
+    },
+    {
+      "method": "OLS with controls",
+      "estimate": 11542,
+      "ci_low": 9006,
+      "ci_high": 14077,
+      "bias": 3542,
+      "covers_truth": false
+    },
+    {
+      "method": "Propensity-score matching",
+      "estimate": 6287,
+      "ci_low": 4536,
+      "ci_high": 8039,
+      "bias": -1713,
+      "covers_truth": true
+    },
+    {
+      "method": "DML (K=5, random forest)",
+      "estimate": 7768,
+      "ci_low": 5210,
+      "ci_high": 10326,
+      "bias": -232,
+      "covers_truth": true
+    }
+  ]
+}
