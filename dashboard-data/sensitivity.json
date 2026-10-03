@@ -1,0 +1,42 @@
+{
+  "note": "DML estimate under different nuisance learners and fold counts. All intervals cover the $8,000 truth.",
+  "truth": 8000,
+  "configs": [
+    {
+      "config": "RF, K=2",
+      "estimate": 8208,
+      "ci_low": 5636,
+      "ci_high": 10780
+    },
+    {
+      "config": "RF, K=5",
+      "estimate": 7768,
+      "ci_low": 5210,
+      "ci_high": 10326
+    },
+    {
+      "config": "RF, K=10",
+      "estimate": 7695,
+      "ci_low": 5144,
+      "ci_high": 10245
+    },
+    {
+      "config": "GBM, K=2",
+      "estimate": 7570,
+      "ci_low": 4997,
+      "ci_high": 10144
+    },
+    {
+      "config": "GBM, K=5",
+      "estimate": 7602,
+      "ci_low": 5031,
+      "ci_high": 10174
+    },
+    {
+      "config": "GBM, K=10",
+      "estimate": 7527,
+      "ci_low": 4951,
+      "ci_high": 10102
+    }
+  ]
+}
