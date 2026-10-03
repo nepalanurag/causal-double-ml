@@ -1,0 +1,42 @@
+{
+  "note": "Standardized mean differences per covariate before and after 1:1 propensity-score matching (with replacement, caliper). Values below 0.1 count as well balanced.",
+  "matched_pairs": 6156,
+  "treated_dropped_by_caliper": 0,
+  "covariates": [
+    {
+      "covariate": "Income ($)",
+      "smd_before": 0.843,
+      "smd_after": -0.001
+    },
+    {
+      "covariate": "Age",
+      "smd_before": 0.234,
+      "smd_after": -0.051
+    },
+    {
+      "covariate": "Education (yrs)",
+      "smd_before": 0.169,
+      "smd_after": 0.013
+    },
+    {
+      "covariate": "Family size",
+      "smd_before": 0.006,
+      "smd_after": 0.061
+    },
+    {
+      "covariate": "Married",
+      "smd_before": 0.2,
+      "smd_after": 0.039
+    },
+    {
+      "covariate": "Has IRA",
+      "smd_before": 0.267,
+      "smd_after": 0.056
+    },
+    {
+      "covariate": "Owns home",
+      "smd_before": 0.099,
+      "smd_after": -0.027
+    }
+  ]
+}
