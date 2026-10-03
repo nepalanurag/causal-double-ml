@@ -1,0 +1,32 @@
+{
+  "note": "30 fresh simulated datasets (n=4,000 each). Mean bias, empirical coverage of the nominal 95% CI, and mean CI width per method.",
+  "n_datasets": 30,
+  "n_per_dataset": 4000,
+  "truth": 8000,
+  "methods": [
+    {
+      "method": "Naive OLS",
+      "mean_bias": 56405,
+      "coverage_95ci": 0.0,
+      "mean_ci_width": 9889
+    },
+    {
+      "method": "OLS with controls",
+      "mean_bias": 4246,
+      "coverage_95ci": 0.3,
+      "mean_ci_width": 7182
+    },
+    {
+      "method": "Propensity-score matching",
+      "mean_bias": 623,
+      "coverage_95ci": 0.43,
+      "mean_ci_width": 4744
+    },
+    {
+      "method": "DML (K=5, random forest)",
+      "mean_bias": 811,
+      "coverage_95ci": 0.9,
+      "mean_ci_width": 7358
+    }
+  ]
+}
