@@ -1,0 +1,77 @@
+{
+ "Naive OLS": {
+  "estimate": 63084.80188462298,
+  "se": 1767.212465708714,
+  "ci_low": 59621.0654518339,
+  "ci_high": 66548.53831741207,
+  "extra": {
+   "note": "HC0 robust SE"
+  }
+ },
+ "OLS with controls": {
+  "estimate": 11541.813722144609,
+  "se": 1293.6646436905528,
+  "ci_low": 9006.231020511124,
+  "ci_high": 14077.396423778093,
+  "extra": {
+   "note": "HC0 robust SE"
+  }
+ },
+ "Propensity-score matching (1:1 NN, caliper, with replacement)": {
+  "estimate": 6287.136031003079,
+  "se": 893.5658985186691,
+  "ci_low": 4535.7468699064875,
+  "ci_high": 8038.52519209967,
+  "extra": {
+   "balance": {
+    "inc": {
+     "before": 0.8426298112155739,
+     "after": -0.0007106057133224779
+    },
+    "age": {
+     "before": 0.23395176575133214,
+     "after": -0.05068316346013601
+    },
+    "educ": {
+     "before": 0.16932045442340826,
+     "after": 0.013351091647356665
+    },
+    "fsize": {
+     "before": 0.005625176870368886,
+     "after": 0.061290553601888065
+    },
+    "marr": {
+     "before": 0.20028131883308126,
+     "after": 0.039218605585702435
+    },
+    "pira": {
+     "before": 0.2666996895357063,
+     "after": 0.05639261592301783
+    },
+    "hown": {
+     "before": 0.0987068064112274,
+     "after": -0.027339930186086867
+    }
+   },
+   "n_treated": 6156,
+   "n_matched_pairs": 6156,
+   "n_treated_dropped": 0,
+   "caliper": 0.31821805843294854,
+   "with_replacement": true,
+   "mean_abs_smd_before": 0.25960214614867116,
+   "mean_abs_smd_after": 0.035569509445358624
+  }
+ },
+ "Double machine learning (K=5, random forest)": {
+  "estimate": 7768.180129631264,
+  "se": 1304.9833342653092,
+  "ci_low": 5210.412794471258,
+  "ci_high": 10325.94746479127,
+  "extra": {
+   "learner_y": "RandomForestRegressor",
+   "learner_d": "RandomForestRegressor",
+   "n_splits": 5,
+   "note": "heteroskedasticity-robust SE"
+  }
+ }
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "Method": "Naive OLS",
+  "Mean bias ($)": 56404.691699512085,
+  "Coverage of 95% CI": 0.0,
+  "Mean CI width ($)": 9889.012074125927
+ },
+ {
+  "Method": "OLS with controls",
+  "Mean bias ($)": 4245.8717093837295,
+  "Coverage of 95% CI": 0.3,
+  "Mean CI width ($)": 7181.727781847005
+ },
+ {
+  "Method": "Propensity-score matching",
+  "Mean bias ($)": 622.5506730424456,
+  "Coverage of 95% CI": 0.43333333333333335,
+  "Mean CI width ($)": 4743.597392553371
+ },
+ {
+  "Method": "DML (K=5, random forest)",
+  "Mean bias ($)": 810.5745192641715,
+  "Coverage of 95% CI": 0.9,
+  "Mean CI width ($)": 7358.140583164327
+ }
+]
