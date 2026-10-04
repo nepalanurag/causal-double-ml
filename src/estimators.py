@@ -12,8 +12,9 @@ Each estimator returns a dict with:
 2. ols_controls    -- Y on D + X, linear. Biased when g(X) is nonlinear or
                       when residual imbalance remains. HC0 robust SEs.
 3. propensity_match -- logistic propensity score, 1:1 nearest-neighbor
-                      matching without replacement on the score, ATT estimate,
-                      paired SE. Reports standardized mean differences.
+                      matching on the score with replacement (default),
+                      ATT estimate, paired SE. Reports standardized mean
+                      differences.
 4. dml             -- double machine learning with cross-fitting, implemented
                       manually (no econml):
                         * split sample into K folds
