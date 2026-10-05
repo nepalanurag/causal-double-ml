@@ -57,7 +57,7 @@ A Monte Carlo study (30 fresh datasets, n = 4,000 each) confirmed the pattern; s
 
 - **Unconfoundedness cannot be verified.** Every method assumes we measured everything that drives both eligibility and wealth. If something unmeasured (financial literacy, employer generosity) affects both, all four estimates are biased and no method on these data can fix that.
 - **Simulated data.** The DGP is realistic but invented. The methods and the comparison are real; the numbers describe the simulation, not the US labor market.
-- **Matching SEs are optimistic.** The paired standard error treats the matches as fixed and the propensity score as known.
+- **Matching SEs are optimistic.** The paired standard error treats the matches as fixed and the propensity score as known. The Monte Carlo study makes this concrete: matching's paired interval covers the true effect in only 43% of replications (vs ~90% for DML), because reusing controls as independent observations understates uncertainty. Abadie-Imbens standard errors are the standard fix; see REPORT.md.
 - **Constant treatment effect.** The DGP fixes the effect at $8,000 for everyone; real effects vary across workers.
 
 ## How to run
